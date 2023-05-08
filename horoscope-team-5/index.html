@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- DatePicker -->
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://kit.fontawesome.com/05cfe4c083.js" crossorigin="anonymous"></script>
+    <!-- Social Media Links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/sharer.js/latest/sharer.min.js"></script>
+    <!-- ================== -->
+    <script src="./assets/social-share-buttons-c/docs/js/jquery.c-share.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">   
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png"> 
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Horoscope</title>
+</head>
+<body>
+  
+  <!-- Add social media icons -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"> <i class="fas fa-meteor"></i></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        </div>
+      </nav>
+        <div class="container dope">
+          <header>HOROSCOPE</header>
+        </div>
+  <div class="container main-box">
+    <div class="row">
+        <div class="col">
+        <!-- Add birth month drop down menu -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a data-month="1" id="month1" class="dropdown-item" href="#">January</a></li>
+            </ul>
+          </div>
+        </div>  
+          <!-- Add birth date drop down menu -->
+    </div>    
+  </div>
+  
+  <!-- Display astrological details -->
+  <div class="container">
+    <div class="row">
+      
+      <!-- Left side -->
+      <div class="col details hide">
+        <div class="container">
+          <h3 class="zodiac-headers">USER DETAILS</h3>
+          <img class='userSymbol' src="" alt="User symbol">
+          <ul id="userDetails">
+            <li id="sign"></li>
+            <li id="color"></li> 
+            <li id="lucky_number"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div class="col" id="mid">
+        <div class="container" id="inthemiddleofthemid">
+          <div class="hide">
+            <h3 class="zodiac-headers" id="horoscope">YOUR HOROSCOPE</h3>
+          </div>
+          <!-- <img class='userSymbol' src="" alt="User symbol"> -->
+          
+            <p class="date">BIRTHDAY: <input type="text" id="datepicker"></p>          
+          <button type="submit" value="Submit" class="btn btn-info" id="submit-date">
+            Submit
+          </button>
+        </div>
+     
+      
+    </div>
+  </div>
+
+  <!-- Social Media Links -->
+  <footer>
+  <div class="container media-container hide">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<URL>" target='_blank' id="share-fb" class="social-media"><i class="fa fa-3x fa-facebook-square"></i></a>
+      <a href="https://twitter.com/share?url=<https://stevenlof777.github.io/dope-horoscrope/> DOPE HOROSCOPE!" target='_blank' id="share-tw" class="social-media"><i class="fa fa-3x fa-twitter-square"></i></a>
+      <a href="https://www.linkedin.com/shareArticle?url=<https://stevenlof777.github.io/dope-horoscrope/>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target='_blank' id="share-li" class="social-media"><i class="fa fa-3x fa-linkedin-square"></i></a>
+  </div>
+  </footer>   
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="./assets/script.js"></script>
+</body>
+</html>
