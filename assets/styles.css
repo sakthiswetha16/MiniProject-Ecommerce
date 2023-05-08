@@ -1,0 +1,265 @@
+:root {
+    --black: #0A1931;
+    --purple1: #3D2C8D;
+    --purple2: #916BBF;
+    --purple3: #C996CC;
+    --blue: #344CB7;
+    --blue2: #5C7AEA;
+    --pink: #E6E6FA;
+    --pink2: #F0D9FF;
+  
+    font-family: 'Playfair Display', serif;
+
+    /* Signs */
+    --capricorn: background-image: url("aquarius.jpg")
+    /* --Aquarius
+    --Pisces
+    --Aries
+    --Taurus
+    --Gemini
+    --Cancer
+    --Leo
+    --Virgo
+    --Libra
+    --Scorpio
+    --Sagittarius
+    --Capricorn */
+
+    /* Celebs */
+ }
+
+ 
+ #userDetails {
+    background-color: var(--pink2);
+    font-family: 'Playfair Display', serif;
+    /* margin-top: 20px;
+    width: 450px;  */
+    /* padding: 60px; */
+/*     max-width: 400px;
+    max-height: 400px; */
+}
+
+.hide {
+    display: none;
+}
+
+li {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: solid var(--purple3) 2px;
+}
+
+header {
+    margin-top: 2rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: xx-large;
+    border-bottom: var(--purple1);
+    font-weight: 600;
+    /* font-style: oblique 20deg; */
+    margin-bottom: 1rem;
+    /* border-bottom: dotted var(--purple1); */
+}
+
+.dope {
+    border-bottom: dotted var(--purple1);
+}
+
+#celebDetails {
+    background-color: brown;
+    /* max-width: 400px;
+    max-height: 400px; */
+}
+
+
+.box {
+    background-color: blueviolet;
+    /* max-width: 400px;
+    max-height: 400px; */
+}
+
+
+.middleCol {
+    background-color: lightblue;
+    /* width: 200px; */
+}
+
+.rightCol {
+    background-color: lightcyan;
+    /* width: 200px; */
+}
+
+.colDetails{
+    font-family: 'Playfair Display', serif;    
+}
+/* .col {
+    justify-content: center;
+    margin-left: 30%; */
+/* } */
+/* .main-box {} */
+
+.navbar {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--purple3);
+}
+
+.navbar-brand {
+    font-size: 40px;
+    color: var(--blue2);
+
+}
+
+.nav-link {
+    font-size: 30px;
+    color: var(--blue);
+
+}
+
+.navbar-toggler {
+    color: green;
+}
+
+body {
+    background-color: var(--pink);
+}
+
+/* .col {
+    background-color: var(--blue2);
+} */
+
+.container {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.details {
+    background-color: var(--pink2);
+}
+
+.ui-datepicker-year {
+    display:none;
+}
+
+#datepicker {
+    width: 100%;
+}
+
+.date {
+    text-align: center;
+    font-weight: 600;
+    border-bottom: var(--purple1) solid;
+    padding-top: 1rem;
+}
+
+#submit-date {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: var(--purple1);
+}
+
+#submit-date:hover {
+    background-color: var(--purple2);
+}
+
+.userResult {
+    text-align: center;
+    border-bottom: none;
+    font-weight: 600;
+}
+
+#name {
+    font-size: x-large;
+    text-align: center;
+    border-bottom: none;
+}
+
+.zodiac-headers {
+    font-size: x-large;
+    text-align: center;
+}
+
+#horoscope {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: dotted var(--purple1);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#description {
+    border-bottom: dotted var(--purple1);
+    padding-bottom: 1rem;
+}
+
+#mid {
+    width:100%;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+#inthemiddleofthemid {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin-left: 10%;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+.media-container {
+    text-align: center;
+}
+
+footer {
+    padding: 5rem;
+}
+
+.social-media {
+    padding: 0px 20px 0px 20px;
+    padding: 10px;
+    color: var(--purple1);
+    transition: scale 2s;
+}
+
+.social-media:hover {
+    color: var(--purple2);
+}
+
+/* Loading Spinner */
+
+.spinner-border {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-border.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+  
